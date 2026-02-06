@@ -20,4 +20,4 @@ _start:
     mov rsi, msg                           ; endereço da mensagem a ser escrita
     mov rdx, len                           ; comprimento da mensagem   
 
-    exit 0                                 ; chamada de sistema para sair do programa, com código de saída 0 (sucesso)             
+exit 0                                 ; chamada de sistema para sair do programa, com código de saída 0 (sucesso)             
