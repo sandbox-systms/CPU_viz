@@ -1,0 +1,23 @@
+%line 1+1 main.asm
+[global _start]
+
+%line 5+1 main.asm
+
+[section .data]
+
+
+
+
+ msg db "CPUVIZ Iniciado", 10
+ len equ $ - msg
+
+
+[section .text]
+_start:
+
+ mov rax, sys_write
+ mov rdi, stdout
+ mov rsi, msg
+ mov rdx, len
+
+ syscall
